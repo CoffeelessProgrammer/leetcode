@@ -17,17 +17,17 @@ public class TwoSum {
     public static int[] twoSum(int[] numbers, int target) {
 
         // Set<Integer> seeking = new HashSet<>();
-        Map<Integer, Integer> found = new HashMap<>();    // <FoundValue, Index>
+        Map<Integer, Integer> seeking = new HashMap<>();    // <WantedValue, IndexOfPreviouslyFoundComplement>
 
         for (int i=0; i<numbers.length; ++i) {
-            if(!found.containsKey(target - numbers[i])) {
-                found.put(numbers[i], i);
+            if(seeking.containsKey(numbers[i])) {
+                return new int[]{ seeking.get(numbers[i]), i };
             } else {
-                return new int[]{ found.get(target - numbers[i]), i };
+                seeking.put(target - numbers[i], i);
             }
         }
 
-        throw new IllegalArgumentException("No two sum solution");
+        throw new IllegalArgumentException("No solution found... ヽ(ಠ_ಠ)ノ");
     }
 
     // #region BruteForce
