@@ -3,8 +3,8 @@ package io.coffeelessprogrammer.leetcode.medium;
 import io.coffeelessprogrammer.leetcode.ds.ListNode;
 
 /*
- * Problem: Add Two Numbers
- * Acceptance Rate: 36.3%
+ * Problem: 2. Add Two Numbers
+ * Acceptance Rate: 36.4%
  * URL: https://leetcode.com/problems/add-two-numbers/
  *
  * Runtime: 2 ms, faster than 67.95% of Java online submissions for Add Two Numbers.

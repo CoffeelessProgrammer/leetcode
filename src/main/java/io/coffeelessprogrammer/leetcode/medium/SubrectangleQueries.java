@@ -1,7 +1,7 @@
 package io.coffeelessprogrammer.leetcode.medium;
 
 /*
- * Problem: Subrectangle Queries
+ * Problem: 1476. Subrectangle Queries
  * Acceptance Rate: 87.9%
  * URL: https://leetcode.com/problems/subrectangle-queries/
  *

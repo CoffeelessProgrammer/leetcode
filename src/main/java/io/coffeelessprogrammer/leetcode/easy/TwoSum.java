@@ -1,8 +1,8 @@
 package io.coffeelessprogrammer.leetcode.easy;
 
 /*
- * Problem: Two Sum
- * Acceptance Rate: 47.2%
+ * Problem: 1. Two Sum
+ * Acceptance Rate: 47.3%
  * URL: https://leetcode.com/problems/two-sum/
  *
  * Runtime: 3 ms, faster than 60.58% of Java online submissions for Two Sum.
