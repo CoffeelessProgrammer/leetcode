@@ -17,6 +17,7 @@ TypeScript Solutions – [Ryo112358/leetcode-typescript](https://github.com/Ryo1
 - <span title="Acceptance Rate: 47.3%">1. Two Sum</span>
 - <span title="Acceptance Rate: 57.6%">13. Roman to Integer</span>
 - <span title="Acceptance Rate: 34.4%">58. Length of Last Word</span>
+- <span title="Acceptance Rate: 88.2%%">1672. Richest Customer Wealth</span>
 
 ### Medium
 - <span title="Acceptance Rate: 36.4%">2. Add Two Numbers</span>
