@@ -15,6 +15,7 @@ TypeScript Solutions – [Ryo112358/leetcode-typescript](https://github.com/Ryo1
 
 ### Easy
 - <span title="Acceptance Rate: 47.3%">1. Two Sum</span>
+- <span title="Acceptance Rate: 57.6%">13. Roman to Integer</span>
 
 ### Medium
 - <span title="Acceptance Rate: 36.4%">2. Add Two Numbers</span>
