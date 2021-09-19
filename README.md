@@ -22,5 +22,6 @@ TypeScript Solutions – [Ryo112358/leetcode-typescript](https://github.com/Ryo1
 
 ### Medium
 - <span title="Acceptance Rate: 36.4%">2. Add Two Numbers</span>
+- <span title="Acceptance Rate: 58.2%">12. Integer To Roman</span>
 - <span title="Acceptance Rate: 84.8%">1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree</span>
 - <span title="Acceptance Rate: 87.9%">1476. Sub-rectangle Queries</span>

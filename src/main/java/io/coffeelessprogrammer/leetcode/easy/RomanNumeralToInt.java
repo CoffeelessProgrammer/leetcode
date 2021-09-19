@@ -12,7 +12,7 @@ import java.util.Map;
  * Memory Usage: 38.6 MB, less than 99.60% of Java online submissions for Roman to Integer.
  */
 
-public class RomanNumerals {
+public class RomanNumeralToInt {
 
     private static Map<Character, Integer> romanToInt = new HashMap<>();
 
@@ -26,7 +26,7 @@ public class RomanNumerals {
         romanToInt.put('M', 1000);
     }
 
-    public static int parseToInt(String romanNum) {
+    public static int convert(String romanNum) {
         int result = 0;
 
         boolean subtractPrevious = false;
