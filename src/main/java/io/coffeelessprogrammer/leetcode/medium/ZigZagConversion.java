@@ -8,8 +8,8 @@ import java.util.List;
  * Acceptance Rate: 39.7%
  * URL: https://leetcode.com/problems/zigzag-conversion/
  *
- * Runtime: 9 ms, faster than 50.48% of Java online submissions for ZigZag Conversion.
- * Memory Usage: 39.4 MB, less than 76.32% of Java online submissions for ZigZag Conversion.
+ * Runtime: 8 ms, faster than 54.57% of Java online submissions for ZigZag Conversion.
+ * Memory Usage: 39.4 MB, less than 76.64% of Java online submissions for ZigZag Conversion.
  */
 
 public class ZigZagConversion {
@@ -18,28 +18,30 @@ public class ZigZagConversion {
     public static String formatHorizontalCompact(String str, int numRows) {
         if(numRows < 2 || numRows >= str.length()) return str;
 
-        final int indicesBetweenCharsOfSamePosition = 2*numRows - 2;
+        initRows(numRows);
 
-        initRows(str, numRows);
+        boolean descending = true;
 
-        boolean goingDown = false;
-        int currPosition;
-        StringBuilder currRow;
+        int currentRow = 0;
 
-        for(int i=numRows; i < str.length(); ++i) {
-            currPosition = i%indicesBetweenCharsOfSamePosition;
+        for(int i=0; i < str.length(); ++i) {
+            rows.get(currentRow).append(str.charAt(i));
 
-            if(goingDown) {
-                currRow = rows.get(currPosition);
-                currRow.append(str.charAt(i));
+            if(descending) {
+                ++currentRow;
 
-                if(currPosition == indicesBetweenCharsOfSamePosition/2) goingDown = false;
+                if(currentRow == numRows) {
+                    currentRow -= 2;
+                    descending = false;
+                }
             }
             else {
-                currRow = rows.get((indicesBetweenCharsOfSamePosition - currPosition)%indicesBetweenCharsOfSamePosition);
-                currRow.append(str.charAt(i));
+                --currentRow;
 
-                if(currPosition == 0) goingDown = true;
+                if(currentRow < 0) {
+                    currentRow += 2;
+                    descending = true;
+                }
             }
         }
 
@@ -133,6 +135,14 @@ public class ZigZagConversion {
         for(int i=0; i < numRows; ++i) {
             rows.add(new StringBuilder());
             rows.get(i).append(str.charAt(i));
+        }
+    }
+
+    private static void initRows(int numRows) {
+        rows = new ArrayList<>();
+
+        for(int i=0; i < numRows; ++i) {
+            rows.add(new StringBuilder());
         }
     }
 
