@@ -9,11 +9,44 @@ import java.util.List;
  * URL: https://leetcode.com/problems/zigzag-conversion/
  *
  * Runtime: 8 ms, faster than 54.57% of Java online submissions for ZigZag Conversion.
- * Memory Usage: 39.4 MB, less than 76.64% of Java online submissions for ZigZag Conversion.
+ * Memory Usage: 39.4 MB, less than 77.06% of Java online submissions for ZigZag Conversion.
+ *
+ *   ↓ After Optimization
+ *
+ * Runtime: 2 ms, faster than 99.95% of Java online submissions for ZigZag Conversion.
+ * Memory Usage: 38.9 MB, less than 97.86% of Java online submissions for ZigZag Conversion.
  */
 
 public class ZigZagConversion {
     private static List<StringBuilder> rows;
+
+    public static String fmtHrzCompactOptimized(String str, int numRows) {
+        if(numRows < 2 || numRows >= str.length()) return str;
+
+        final int distanceBetween = 2*numRows - 2;    // indicesBetweenCharsOfSamePosition
+
+        StringBuilder result = new StringBuilder();
+
+        for(int i=0; i < str.length(); i += distanceBetween) {
+            result.append(str.charAt(i));
+        }
+
+        for(int i=1; i < numRows-1; ++i) {
+            for(int left = i, right = distanceBetween - i; left < str.length();left += distanceBetween, right += distanceBetween) {
+                result.append(str.charAt(left));
+
+                if(right < str.length())
+                    result.append(str.charAt(right));
+                else break;
+            }
+        }
+
+        for(int i=numRows-1; i < str.length(); i += distanceBetween) {
+            result.append(str.charAt(i));
+        }
+
+        return result.toString();
+    }
 
     public static String formatHorizontalCompact(String str, int numRows) {
         if(numRows < 2 || numRows >= str.length()) return str;

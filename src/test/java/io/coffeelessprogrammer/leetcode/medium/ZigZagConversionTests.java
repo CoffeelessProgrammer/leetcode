@@ -7,6 +7,26 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 public class ZigZagConversionTests {
 
     @Test
+    final void CompactOptimized_Rows2_WATEREARTHFIREAIR() {
+        assertEquals("WTRATFRARAEERHIEI", ZigZagConversion.fmtHrzCompactOptimized("WATEREARTHFIREAIR", 2));
+    }
+
+    @Test
+    final void CompactOptimized_Rows3_PAYPALISHIRING(){
+        assertEquals("PAHNAPLSIIGYIR", ZigZagConversion.fmtHrzCompactOptimized("PAYPALISHIRING", 3));
+    }
+
+    @Test
+    final void CompactOptimized_Rows4_WATEREARTHFIREAIR(){
+        assertEquals("WARAERIETRTFAREHI", ZigZagConversion.fmtHrzCompactOptimized("WATEREARTHFIREAIR", 4));
+    }
+
+    @Test
+    final void CompactOptimized_Rows5_WATEREARTHFIREAIR(){
+        assertEquals("WTRARHITAFAEEIERR", ZigZagConversion.fmtHrzCompactOptimized("WATEREARTHFIREAIR", 5));
+    }
+
+    @Test
     final void Compact_Rows3_PAYPALISHIRING(){
         assertEquals("PAHNAPLSIIGYIR", ZigZagConversion.formatHorizontalCompact("PAYPALISHIRING", 3));
     }
