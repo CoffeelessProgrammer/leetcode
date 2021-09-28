@@ -18,6 +18,7 @@ TypeScript Solutions – [Ryo112358/leetcode-typescript](https://github.com/Ryo1
 - <span title="Runtime Percentile: 100.00%">7. Reverse Integer</span>
 - <span title="Runtime Percentile: 57.6%">13. Roman to Integer</span>
 - <span title="Runtime Percentile: 99.81%">58. Length of Last Word</span>
+- <span title="Runtime Percentile: 100.00%">844. Backspace String Compare</span>
 - <span title="Runtime Percentile: 100.00%">1672. Richest Customer Wealth</span>
 
 ### Medium
@@ -27,3 +28,6 @@ TypeScript Solutions – [Ryo112358/leetcode-typescript](https://github.com/Ryo1
 - <span title="Runtime Percentile: 81.17%">12. Integer To Roman</span>
 - <span title="Runtime Percentile: 64.30%">1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree</span>
 - <span title="Runtime Percentile: 93.52%">1476. Sub-rectangle Queries</span>
+
+### Hard
+- <span title="Runtime Percentile: 100.00%">42. Trapping Rain Water</span>
