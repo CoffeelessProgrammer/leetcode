@@ -11,7 +11,7 @@ import java.util.List;
  * Runtime: 8 ms, faster than 54.57% of Java online submissions for ZigZag Conversion.
  * Memory Usage: 39.4 MB, less than 77.06% of Java online submissions for ZigZag Conversion.
  *
- *   ↓ After Optimization
+ *   ↓ Post Optimization
  *
  * Runtime: 2 ms, faster than 99.95% of Java online submissions for ZigZag Conversion.
  * Memory Usage: 38.9 MB, less than 97.86% of Java online submissions for ZigZag Conversion.

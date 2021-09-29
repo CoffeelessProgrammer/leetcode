@@ -47,32 +47,43 @@ public class TrappingRainWater {
         return totalTrappedWater;
     }
 
-    /** In progress */
+    // #region BruteForce
+
     public static int calcVolumeBF(int[] walls) {
         int totalTrappedWater = 0;
 
-        List<Integer> waterTrappedPerLevel;
+        for(int i=0; i < walls.length; ++i) {
+            int maxLeft = findHeightTallestLeftWall(walls, i);
+            int maxRight = findHeightTallestRightWall(walls, i);
 
-        for(int i=1; i < walls.length; ++i) {
-            if(walls[i] > 0) {
-                waterTrappedPerLevel = new ArrayList<>();
+            int currentWater = Math.min(maxLeft, maxRight) - walls[i];
 
-                for(int j=i+1; j < walls.length && walls[j] < walls[i]; ++j) {
-
-                    System.out.println(waterTrappedPerLevel.size());
-                    for(int k=1; k < walls[i]; ++k) {
-                        waterTrappedPerLevel.add(walls[i] - walls[j]);
-                    }
-                }
-
-                System.out.println(Arrays.toString(waterTrappedPerLevel.toArray()));
-
-                for(int volumeAtDepth: waterTrappedPerLevel) {
-                    totalTrappedWater += volumeAtDepth;
-                }
-            }
+            if(currentWater > 0)
+                totalTrappedWater += currentWater;
         }
 
         return totalTrappedWater;
     }
+
+    private static int findHeightTallestLeftWall(int[] walls, int startingIndex) {
+        int tallestWall = 0;
+
+        for(int i=startingIndex; i > -1; --i) {
+            tallestWall = Math.max(walls[i], tallestWall);
+        }
+
+        return tallestWall;
+    }
+
+    private static int findHeightTallestRightWall(int[] walls, int startingIndex) {
+        int tallestWall = 0;
+
+        for(int i=startingIndex; i < walls.length; ++i) {
+            tallestWall = Math.max(walls[i], tallestWall);
+        }
+
+        return tallestWall;
+    }
+
+    // #endRegion
 }

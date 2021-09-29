@@ -23,6 +23,7 @@ TypeScript Solutions – [Ryo112358/leetcode-typescript](https://github.com/Ryo1
 
 ### Medium
 - <span title="Runtime Percentile: 67.95%">2. Add Two Numbers</span>
+- <span title="Runtime Percentile: 91.22%">3. Longest Substring Without Repeating Characters</span>
 - <span title="Runtime Percentile: 99.95%">6. ZigZag Conversion</span>
 - <span title="Runtime Percentile: 98.48%">11. Container With Most Water</span>
 - <span title="Runtime Percentile: 81.17%">12. Integer To Roman</span>
