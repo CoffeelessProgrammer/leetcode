@@ -18,7 +18,10 @@ TypeScript Solutions – [Ryo112358/leetcode-typescript](https://github.com/Ryo1
 - <span title="Runtime Percentile: 100.00%">7. Reverse Integer</span>
 - <span title="Runtime Percentile: 57.6%">13. Roman to Integer</span>
 - <span title="Runtime Percentile: 99.81%">58. Length of Last Word</span>
+- <span title="Runtime Percentile: 31.51%">125. Valid Palindrome</span>
+- <span title="Runtime Percentile: 77.83%">680. Valid Palindrome II</span>
 - <span title="Runtime Percentile: 100.00%">844. Backspace String Compare</span>
+- <span title="Runtime Percentile: 99.82%">1603. Design Parking System</span>
 - <span title="Runtime Percentile: 100.00%">1672. Richest Customer Wealth</span>
 
 ### Medium
