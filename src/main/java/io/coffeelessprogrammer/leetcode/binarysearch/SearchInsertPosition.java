@@ -1,6 +1,5 @@
 package io.coffeelessprogrammer.leetcode.binarysearch;
 
-
 import static io.coffeelessprogrammer.leetcode.binarysearch.BinarySearch.displayWindowCenter;
 
 /*

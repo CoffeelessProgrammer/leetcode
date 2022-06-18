@@ -13,11 +13,18 @@
 
 TypeScript Solutions – [Ryo112358/leetcode-typescript](https://github.com/Ryo112358/leetcode-typescript)
 
-### Easy
+### Type
 - Binary Search
   - <span title="Runtime Percentile: 100.00">35. Search Insert Position</span>
   - <span title="Runtime Percentile: 97.67%">278. First Bad Version</span>
   - <span title="Runtime Percentile: 100.00">704. Binary Search</span>
+- Two Pointers
+  - <span title="Runtime Percentile: 98.48%">11. Container With Most Water</span>
+  - <span title="Runtime Percentile: 100.00%">42. Trapping Rain Water</span>
+  - <span title="Runtime Percentile: 100.00">977. Squares of a Sorted Array</span>
+  - <span title="Runtime Percentile: 100.00%">189. Rotate Array</span>
+
+### Easy
 - <span title="Runtime Percentile: 60.58%">1. Two Sum</span>
 - <span title="Runtime Percentile: 100.00%">7. Reverse Integer</span>
 - <span title="Runtime Percentile: 57.6%">13. Roman to Integer</span>
@@ -32,10 +39,11 @@ TypeScript Solutions – [Ryo112358/leetcode-typescript](https://github.com/Ryo1
 - <span title="Runtime Percentile: 67.95%">2. Add Two Numbers</span>
 - <span title="Runtime Percentile: 91.22%">3. Longest Substring Without Repeating Characters</span>
 - <span title="Runtime Percentile: 99.95%">6. ZigZag Conversion</span>
-- <span title="Runtime Percentile: 98.48%">11. Container With Most Water</span>
 - <span title="Runtime Percentile: 81.17%">12. Integer To Roman</span>
 - <span title="Runtime Percentile: 64.30%">1379. Find a Corresponding Node of a Binary Tree in a Clone of That Tree</span>
 - <span title="Runtime Percentile: 93.52%">1476. Sub-rectangle Queries</span>
 
 ### Hard
-- <span title="Runtime Percentile: 100.00%">42. Trapping Rain Water</span>
+
+
+

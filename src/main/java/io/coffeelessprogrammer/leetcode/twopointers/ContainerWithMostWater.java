@@ -1,4 +1,4 @@
-package io.coffeelessprogrammer.leetcode.medium;
+package io.coffeelessprogrammer.leetcode.twopointers;
 
 /*
  * Problem: 11. Container With Most Water

@@ -1,4 +1,4 @@
-package io.coffeelessprogrammer.leetcode.hard;
+package io.coffeelessprogrammer.leetcode.twopointers;
 
 import java.util.Arrays;
 import java.util.List;
