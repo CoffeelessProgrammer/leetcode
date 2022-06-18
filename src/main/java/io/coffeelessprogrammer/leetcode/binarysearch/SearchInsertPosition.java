@@ -1,6 +1,7 @@
 package io.coffeelessprogrammer.leetcode.binarysearch;
 
-import static io.coffeelessprogrammer.leetcode.binarysearch.BinarySearch.displayWindow;
+
+import static io.coffeelessprogrammer.leetcode.binarysearch.BinarySearch.displayWindowCenter;
 
 /*
  * Problem: 35. Search Insert Position
@@ -20,15 +21,15 @@ public class SearchInsertPosition {
         // Define window bounds
         int leftBound=0, rightBound = nums.length-1;
 
-        int position=0, value;
+        int position = BinarySearch.middleIndexCeil(leftBound, rightBound), value;
+
+        displayWindowCenter(position, leftBound, rightBound);
 
         boolean isTargetGreater = false;
 
         while(leftBound <= rightBound) {
             position = BinarySearch.middleIndexCeil(leftBound, rightBound);
             value = nums[position];
-
-            displayWindow(position, leftBound, rightBound);
 
             if(value == target) return position;
             else if(target < value) {

@@ -2,7 +2,7 @@ package io.coffeelessprogrammer.leetcode.binarysearch;
 
 import java.util.Random;
 
-import static io.coffeelessprogrammer.leetcode.binarysearch.BinarySearch.displayWindow;
+import static io.coffeelessprogrammer.leetcode.binarysearch.BinarySearch.*;
 
 /*
  * Problem: 278. First Bad Version
@@ -14,7 +14,7 @@ import static io.coffeelessprogrammer.leetcode.binarysearch.BinarySearch.display
  * Memory Usage: 38.9 MB, less than 94.22% of Java online submissions for First Bad Version.
  */
 public class FirstBadVersion {
-    private static Random rand = new Random();
+    private static final Random rand = new Random();
     private static int firstBadVersion;
 
     private static boolean isBadVersion(int version) {
@@ -24,7 +24,7 @@ public class FirstBadVersion {
     public static int search(int numVersions) {
         final int badVersionsStartingIndex = rand.nextInt(numVersions)+1;
 
-        System.out.printf("Bad versions start at version %d", badVersionsStartingIndex);
+        System.out.printf("Bad versions start at version %d\n", badVersionsStartingIndex);
         return search(numVersions, badVersionsStartingIndex);
     }
 
@@ -41,10 +41,11 @@ public class FirstBadVersion {
 
         int position = BinarySearch.middleIndex(leftBound, rightBound);
 
+        displayWindowCenter(position, leftBound, rightBound);
+
         boolean currentVersionBad, precedingVersionGood;
 
         do {
-            displayWindow(position, leftBound, rightBound);
 
             currentVersionBad = isBadVersion(position);
             precedingVersionGood = !isBadVersion(position-1);
@@ -63,21 +64,20 @@ public class FirstBadVersion {
                 rightBound = position-1;
                 position = BinarySearch.middleIndex(leftBound, rightBound);
 
-                continue;
-            }
-
-            if(isBadVersion(rightBound)) {
-                if(!isBadVersion((rightBound-1))) {
-                    position = rightBound;
-                    break;
+            } else {    // Current version is good
+                if(isBadVersion(rightBound)) {
+                    if(!isBadVersion((rightBound-1))) {
+                        position = rightBound;
+                        break;
+                    }
                 }
+
+                leftBound = position+1;
+                rightBound -= 1;
+                position = BinarySearch.middleIndex(leftBound, rightBound);
             }
 
-            leftBound = position+1;
-            rightBound -= 1;
-            position = BinarySearch.middleIndex(leftBound, rightBound);
-
-        } while(rightBound-leftBound>-1);
+        } while(leftBound <= rightBound);
 
         return position;
     }
@@ -96,27 +96,31 @@ public class FirstBadVersion {
 
         int position = middleIndex(leftBound, rightBound);
 
+        displayWindowCenter(position, leftBound, rightBound);
+
         boolean currentVersionBad, precedingVersionGood;
 
         do {
-            displayWindow(position, leftBound, rightBound);
+            // position = BinarySearch.middleIndex(leftBound, rightBound);
 
             currentVersionBad = isBadVersion(position);
             precedingVersionGood = !isBadVersion(position-1);
 
             if(currentVersionBad) {
                 if(precedingVersionGood) break;
-
                 rightBound = position;
                 position = BinarySearch.middleIndex(leftBound, rightBound);
 
-                continue;
+                displayWindowLeft(position, leftBound, rightBound);
+            }
+            else {
+                leftBound = position;
+                position = BinarySearch.middleIndex(leftBound, rightBound);
+
+                displayWindowRight(position, leftBound, rightBound);
             }
 
-            leftBound = position;
-            position = BinarySearch.middleIndex(leftBound, rightBound);
-
-        } while(rightBound-leftBound>-1);
+        } while(leftBound <= rightBound);
 
         return position;
     }
