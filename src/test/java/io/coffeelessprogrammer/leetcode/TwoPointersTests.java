@@ -5,7 +5,6 @@ import io.coffeelessprogrammer.leetcode.twopointers.SquaresOfSortedArray;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertArrayEquals;
-import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class TwoPointersTests {
 
@@ -45,6 +44,24 @@ public class TwoPointersTests {
         final int[] arr = {-1,-100,3,99};
 
         rotateArray1d.rotate(arr, 2);
+
+        assertArrayEquals(new int[]{3,99,-1,-100}, arr);
+    }
+
+    @Test
+    final void RotateArray1d_Inplace1() {
+        final int[] arr = {1,2,3,4,5,6,7};
+
+        rotateArray1d.rotateInplace(arr, 3);
+
+        assertArrayEquals(new int[]{5,6,7,1,2,3,4}, arr);
+    }
+
+    @Test
+    final void RotateArray1d_Inplace2() {
+        final int[] arr = {-1,-100,3,99};
+
+        rotateArray1d.rotateInplace(arr, 2);
 
         assertArrayEquals(new int[]{3,99,-1,-100}, arr);
     }
