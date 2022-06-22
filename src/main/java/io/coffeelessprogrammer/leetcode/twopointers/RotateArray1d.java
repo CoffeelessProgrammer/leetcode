@@ -44,8 +44,6 @@ public class RotateArray1d {
         else
             k = k%nums.length;
 
-        // System.out.println("Before: " + Arrays.toString(nums));
-
         // Setup
         final int lcm = BasicMath.leastCommonMultiple(nums.length, k);
         final int cycleAfter = lcm/k;
@@ -59,12 +57,40 @@ public class RotateArray1d {
                 ++position;
             }
             position = (position+k) % nums.length;
-            // System.out.printf("\tSwapping:  nums[%d]=%d\tnums[%d]=%d\n", currentCycle, nums[currentCycle], position, nums[position]);
             Array.swapIndices(nums, currentCycle, position);
-            // System.out.printf("\tPost-swap: %s\n\n", Arrays.toString(nums));
+        }
+    }
+
+    public void rotateInplaceVerbose(int[] nums, int k) {
+        // Sanitize input
+        if(k%nums.length==0)
+            return;
+        else
+            k = k%nums.length;
+
+        // Setup
+        final int lcm = BasicMath.leastCommonMultiple(nums.length, k);
+        final int cycleAfter = lcm/k;
+
+        System.out.printf("k=%d, iterationsPerCycle=%d\n", k, cycleAfter);
+        System.out.printf("Before: %s\n\n", Arrays.toString(nums));
+
+        // Rotate
+        int currentCycle = 0;
+
+        for(int position=0, j=0; j < nums.length; ++j) {
+            if(j/cycleAfter > currentCycle) {
+                ++currentCycle;
+                ++position;
+            }
+            System.out.printf("iteration=%d, currentCycle=%d\n", j, currentCycle);
+            position = (position+k) % nums.length;
+            System.out.printf("\tSwapping:  nums[%d]=%d\tnums[%d]=%d\n", currentCycle, nums[currentCycle], position, nums[position]);
+            Array.swapIndices(nums, currentCycle, position);
+            System.out.printf("\tPost-swap: %s\n\n", Arrays.toString(nums));
         }
 
-        // System.out.println("After:  " + Arrays.toString(nums));
+         System.out.println("After:  " + Arrays.toString(nums));
     }
 
     //#region LeetcodeResearch
