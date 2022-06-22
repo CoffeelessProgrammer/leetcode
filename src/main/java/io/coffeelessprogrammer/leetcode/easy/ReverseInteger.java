@@ -75,7 +75,7 @@ public class ReverseInteger {
         return digitCount;
     }
 
-    // ----- Solution with Builtin Overflow Check (Researched) -----
+    //#region LeetcodeResearch
 
     public static int reverseAlt(int x) {
         int reversed = 0;
@@ -99,4 +99,6 @@ public class ReverseInteger {
 
         return reversed;
     }
+
+    //#endRegion
 }
