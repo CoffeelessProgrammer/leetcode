@@ -1,4 +1,4 @@
-package io.coffeelessprogrammer.leetcode.twopointers;
+package io.coffeelessprogrammer.leetcode.twopointers.stringreversal;
 
 /*
  * Problem: 344. Reverse String

@@ -26,8 +26,12 @@ TypeScript Solutions – [Ryo112358/leetcode-typescript](https://github.com/Ryo1
   - <span title="Runtime Percentile: 100.00%">189. Rotate Array</span>
   - <span title="Runtime Percentile: 76.96%">283. Move Zeroes</span>
   - <span title="Runtime Percentile: 99.24%">167. Two Sum II - Input Array Is Sorted</span>
-  - <span title="Runtime Percentile: 99.78%">344. Reverse String</span>
-  - <span title="Runtime Percentile: 74.71%">557. Reverse Words in a String III</span>
+  - String Reversal
+    - <span title="Runtime Percentile: 99.78%">344. Reverse String</span>
+    - <span title="Runtime Percentile: 65.15%">541. Reverse String II</span>
+    - <span title="Runtime Percentile: 93.82%">151. Reverse Words in a String</span>
+    - <span title="Runtime Percentile: 74.71%">557. Reverse Words in a String III</span>
+    - <span title="Runtime Percentile: 97.62%">345. Reverse Vowels of a String</span>
 
 ### Easy
 - <span title="Runtime Percentile: 60.58%">1. Two Sum</span>

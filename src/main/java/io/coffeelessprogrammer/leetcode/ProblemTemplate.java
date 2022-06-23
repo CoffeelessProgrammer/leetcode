@@ -10,6 +10,8 @@ package io.coffeelessprogrammer.leetcode;
  * Memory Usage: 99.9 MB, less than 99.99% of Java online submissions for Binary Search.
  */
 public class ProblemTemplate {
-    public void solve() {
-    }
+
+    //#region Placeholder
+
+    //#endRegion
 }

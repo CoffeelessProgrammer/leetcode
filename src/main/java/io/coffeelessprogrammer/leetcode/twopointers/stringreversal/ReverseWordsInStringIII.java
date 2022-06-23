@@ -1,4 +1,4 @@
-package io.coffeelessprogrammer.leetcode.twopointers;
+package io.coffeelessprogrammer.leetcode.twopointers.stringreversal;
 
 import io.coffeelessprogrammer.leetcode.utility.Array;
 
