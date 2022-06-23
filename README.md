@@ -26,6 +26,10 @@ TypeScript Solutions – [Ryo112358/leetcode-typescript](https://github.com/Ryo1
   - <span title="Runtime Percentile: 100.00%">189. Rotate Array</span>
   - <span title="Runtime Percentile: 76.96%">283. Move Zeroes</span>
   - <span title="Runtime Percentile: 99.24%">167. Two Sum II - Input Array Is Sorted</span>
+  - Linked Lists
+    - <span title="Runtime Percentile: 100.0%">876. Middle of the Linked List</span>
+    - <span title="Runtime Percentile: 41.58%">2095. Delete the Middle Node of a Linked List</span>
+    - <span title="Runtime Percentile: 100.0%">19. Remove Nth Node From End of List</span>
   - String Reversal
     - <span title="Runtime Percentile: 99.78%">344. Reverse String</span>
     - <span title="Runtime Percentile: 65.15%">541. Reverse String II</span>
