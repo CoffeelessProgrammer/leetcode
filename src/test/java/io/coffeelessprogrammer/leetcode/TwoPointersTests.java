@@ -1,12 +1,15 @@
 package io.coffeelessprogrammer.leetcode;
 
 import io.coffeelessprogrammer.leetcode.twopointers.MoveZeroes;
+import io.coffeelessprogrammer.leetcode.twopointers.PermutationInString;
 import io.coffeelessprogrammer.leetcode.twopointers.RotateArray1d;
 import io.coffeelessprogrammer.leetcode.twopointers.SquaresOfSortedArray;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.TestInstance;
 
-import static org.junit.jupiter.api.Assertions.assertArrayEquals;
+import static org.junit.jupiter.api.Assertions.*;
 
+@TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class TwoPointersTests {
 
     //#region SquaresOfSortedArray
@@ -89,6 +92,27 @@ public class TwoPointersTests {
         moveZeroes.bubble(arr);
 
         assertArrayEquals(new int[]{1,3,12,0,0}, arr);
+    }
+
+    //#endRegion
+
+    //#region PermutationInString
+
+    PermutationInString permutationInString = new PermutationInString();
+
+    @Test
+    final void PermutationInString_HappyPath() {
+        assertTrue(permutationInString.checkInclusionTallySum("ab", "eidbaooo"));
+    }
+
+    @Test
+    final void PermutationInString_Overlap() {
+        assertTrue(permutationInString.checkInclusionTallySum("adc", "dcda"));
+    }
+
+    @Test
+    final void PermutationInString_SadPath() {
+        assertFalse(permutationInString.checkInclusionTallySum("hello", "ooolleoooleh"));
     }
 
     //#endRegion

@@ -13,5 +13,5 @@ public class ProblemTemplate {
 
     //#region Placeholder
 
-    //#endRegion
+    //#endregion
 }

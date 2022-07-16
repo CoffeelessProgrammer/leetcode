@@ -15,7 +15,7 @@ public class BinarySearchTests {
     @Test
     final void BinarySearch_ArraySize6() {
         assertEquals(4,
-                BinarySearch.search(new int[]{-1,0,3,5,9,12}, 9));
+                BinarySearch.binarySearch(new int[]{-1,0,3,5,9,12}, 9));
     }
 
     //#endRegion

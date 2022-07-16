@@ -9,7 +9,9 @@ import static io.coffeelessprogrammer.leetcode.binarysearch.BinarySearch.display
  * URL: https://leetcode.com/problems/search-insert-position/
  *
  * Runtime: 0 ms, faster than 100.00% of Java online submissions for Search Insert Position.
- * Memory Usage: 43.7 MB, less than 34.47% of Java online submissions for Search Insert Position.
+ * Memory Usage: 42.1 MB, less than 83.84% of Java online submissions for Search Insert Position.
+ *
+ * Visual Explanation: https://www.instagram.com/p/CfpUjJ6OyMY/?igshid=YmMyMTA2M2Y=
  */
 public class SearchInsertPosition {
     public int find(int[] nums, int target) {

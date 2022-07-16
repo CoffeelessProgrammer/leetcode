@@ -10,7 +10,7 @@ package io.coffeelessprogrammer.leetcode.binarysearch;
  * Memory Usage: 54 MB, less than 61.50% of Java online submissions for Binary Search.
  */
 public class BinarySearch {
-    public static int search(int[] nums, int target) {
+    public static int binarySearch(int[] nums, int target) {
         int leftBound = 0;
         int rightBound = nums.length-1;
 

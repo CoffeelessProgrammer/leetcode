@@ -8,19 +8,38 @@ import io.coffeelessprogrammer.leetcode.ds.ListNode;
  * Acceptance Rate: 56.3%
  * URL: https://leetcode.com/problems/delete-the-middle-node-of-a-linked-list/
  *
- * Runtime: 6 ms, faster than 41.58% of Java online submissions for Delete the Middle Node of a Linked List.
+ * Runtime: 5 ms, faster than 74.64% of Java online submissions for Delete the Middle Node of a Linked List.
  * Memory Usage: 206.8 MB, less than 70.22% of Java online submissions for Delete the Middle Node of a Linked List.
+ *
+ * Visual Explanation: https://www.instagram.com/p/Cf13pvEvInj/?igshid=YmMyMTA2M2Y=
  */
 public class DeleteMiddleNodeOfLL {
 
     public ListNode remove(ListNode head) {
         if(head.next == null) return null;  // i.e. listSize = 1
 
-        ListNode rabbit = head;
+        ListNode duck = head;
         ListNode frog = new ListNode(-1, head);
 
-        for(int i=0; rabbit.next != null; ++i) {
-            rabbit = rabbit.next;
+        while(duck.next != null) {
+            duck = duck.next.next;
+            frog = frog.next;
+            if(duck==null) break;
+        }
+
+        frog.next = frog.next.next;
+
+        return head;
+    }
+
+    public ListNode removeStepByStepTraversal(ListNode head) {
+        if(head.next == null) return null;  // i.e. listSize = 1
+
+        ListNode duck = head;
+        ListNode frog = new ListNode(-1, head);
+
+        for(int i=0; duck.next != null; ++i) {
+            duck = duck.next;
             if(i%2==0) frog = frog.next;
         }
 
@@ -31,29 +50,9 @@ public class DeleteMiddleNodeOfLL {
 
     //#region LeetcodeResearch
 
-    /* Why are these faster?
-     * Probably because they move rabbit two spots ahead every iteration
+    /* Why is this faster?
+     * Probably because rabbit moves two spots ahead every iteration
      */
-
-    /** Runtime: 4 ms
-     */
-    public ListNode deleteMiddle1(ListNode head) {
-        if(head.next == null) return null;
-        if(head.next.next == null) {head.next = null; return head;}
-
-        ListNode slow = head, fast = head;
-        ListNode prev = new ListNode(0);
-        prev.next = head;
-
-        while(fast != null && fast.next != null)
-        {
-            fast = fast.next.next;
-            slow = slow.next;
-            prev = prev.next;
-        }
-        prev.next = slow.next;
-        return head;
-    }
 
     /** Runtime: 3 ms
      */

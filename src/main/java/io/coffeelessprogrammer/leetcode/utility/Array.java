@@ -1,5 +1,7 @@
 package io.coffeelessprogrammer.leetcode.utility;
 
+import java.util.List;
+
 public class Array {
 
     public static void swapIndices(int[] arr, int m, int n) {
@@ -29,10 +31,22 @@ public class Array {
 
         char temp;
 
-        for(; start < end; ++start, --end) {
+        while(start < end) {
             temp = arr[start];
-            arr[start] = arr[end];
-            arr[end] = temp;
+            arr[start++] = arr[end];
+            arr[end--] = temp;
         }
+    }
+
+    public static int sum(int[] arr) {
+        int sum = 0;
+        for(int num : arr) sum += num;
+        return sum;
+    }
+
+    public static int getMax(List<Integer> integers) {
+        int max = 0;
+        for(int num : integers) if(num > max) max = num;
+        return max;
     }
 }

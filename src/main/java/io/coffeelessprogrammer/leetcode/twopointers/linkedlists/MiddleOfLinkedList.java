@@ -3,6 +3,17 @@ package io.coffeelessprogrammer.leetcode.twopointers.linkedlists;
 import io.coffeelessprogrammer.leetcode.ds.ListNode;
 
 /*
+ * Definition for singly-linked list.
+ * public class ListNode {
+ *     int val;
+ *     ListNode next;
+ *     ListNode() {}
+ *     ListNode(int val) { this.val = val; }
+ *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }
+ * }
+ */
+
+/*
  * Problem: 876. Middle of the Linked List
  * Difficulty: Easy
  * Acceptance Rate: 73.0%
@@ -39,5 +50,5 @@ public class MiddleOfLinkedList {
         return slow;
     }
 
-    //#endRegion
+    //#endregion
 }

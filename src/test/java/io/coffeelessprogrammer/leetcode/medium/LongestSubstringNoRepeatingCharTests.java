@@ -29,4 +29,10 @@ public class LongestSubstringNoRepeatingCharTests {
     final void TrickyOverlap() {
         Assertions.assertEquals(5, LongestSubstringNoRepeatingChar.getLength("anviaj"));
     }
+
+    @Test
+    final void ABCABCBB() {
+        Assertions.assertEquals(3, LongestSubstringNoRepeatingChar.getLength("abcabcbb"));
+    }
+
 }
