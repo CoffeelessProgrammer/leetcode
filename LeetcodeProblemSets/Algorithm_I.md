@@ -1,5 +1,7 @@
 # Algorithm I – Leetcode Study Plan
 
+[Leetcode Algo I Study Plan](https://leetcode.com/study-plan/algorithm/)
+
 ## Day 1 – Binary Search
 
 | Problem | Difficulty | Acceptance Rate | Link |

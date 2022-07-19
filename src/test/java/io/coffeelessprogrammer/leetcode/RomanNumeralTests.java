@@ -1,7 +1,7 @@
 package io.coffeelessprogrammer.leetcode;
 
-import io.coffeelessprogrammer.leetcode.easy.RomanNumeralToInt;
-import io.coffeelessprogrammer.leetcode.medium.IntToRomanNumeral;
+import io.coffeelessprogrammer.leetcode.difficulty.easy.RomanNumeralToInt;
+import io.coffeelessprogrammer.leetcode.difficulty.medium.IntToRomanNumeral;
 
 import org.junit.jupiter.api.Test;
 

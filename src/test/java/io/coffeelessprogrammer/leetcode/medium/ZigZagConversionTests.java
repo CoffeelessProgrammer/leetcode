@@ -1,5 +1,6 @@
 package io.coffeelessprogrammer.leetcode.medium;
 
+import io.coffeelessprogrammer.leetcode.difficulty.medium.ZigZagConversion;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

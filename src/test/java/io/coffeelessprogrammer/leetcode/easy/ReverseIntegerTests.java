@@ -1,5 +1,6 @@
 package io.coffeelessprogrammer.leetcode.easy;
 
+import io.coffeelessprogrammer.leetcode.difficulty.easy.ReverseInteger;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 

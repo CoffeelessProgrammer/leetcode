@@ -1,7 +1,7 @@
 # LeetCode Solutions in Java
 
 - Koi Creek Interview Prep – [interview-prep.coding](https://github.com/koicreek/interview-prep.coding)
-- Leetcode Problems Explained – [@CoffeelessProgrammer | Instagram](https://www.instagram.com/coffeelessprogrammer/)
+- Leetcode Problems Visualized – [@CoffeelessProgrammer | Instagram](https://www.instagram.com/coffeelessprogrammer/)
 
 ## Environment
 - <span title="">IntelliJ IDEA v2021.3</span>
@@ -15,29 +15,29 @@
 - TypeScript Solutions – [Ryo112358/leetcode-typescript](https://github.com/Ryo112358/leetcode-typescript)
 
 ### By Topic
-- Binary Search
+- **Binary Search**
   - <span title="Runtime Percentile: 100.00">35. Search Insert Position</span>
   - <span title="Runtime Percentile: 97.67%">278. First Bad Version</span>
   - <span title="Runtime Percentile: 100.00">704. Binary Search</span>
-- BFS/DFS
+- **BFS/DFS**
   - <span title="Runtime Percentile: 90.52%">733. Flood Fill</span>
   - <span title="Runtime Percentile: 81.62%">463. Island Perimeter</span>
   - <span title="Runtime Percentile: 100.00%">695. Max Area of Island</span>
-- Two Pointers
-  - <span title="Runtime Percentile: 98.48%">11. Container With Most Water</span>
-  - <span title="Runtime Percentile: 100.00%">42. Trapping Rain Water</span>
+- **Two Pointers**
   - <span title="Runtime Percentile: 100.00">977. Squares of a Sorted Array</span>
   - <span title="Runtime Percentile: 100.00%">189. Rotate Array</span>
   - <span title="Runtime Percentile: 76.96%">283. Move Zeroes</span>
   - <span title="Runtime Percentile: 99.24%">167. Two Sum II - Input Array Is Sorted</span>
-  - Linked Lists
+  - **Linked Lists**
     - <span title="Runtime Percentile: 100.0%">876. Middle of the Linked List</span>
     - <span title="Runtime Percentile: 74.64%">2095. Delete the Middle Node of a Linked List</span>
     - <span title="Runtime Percentile: 100.0%">19. Remove Nth Node From End of List</span>
-  - Sliding Window
-    - <span title="Runtime Percentile: 99.85%">567. Permutation in String</span>
+  - **Sliding Window**
     - <span title="Runtime Percentile: 81.64%">3. Longest Substring Without Repeating Characters</span>
-  - String Reversal
+    - <span title="Runtime Percentile: 98.48%">11. Container With Most Water</span>
+    - <span title="Runtime Percentile: 100.00%">42. Trapping Rain Water</span>
+    - <span title="Runtime Percentile: 99.85%">567. Permutation in String</span>
+  - **String Reversal**
     - <span title="Runtime Percentile: 99.78%">344. Reverse String</span>
     - <span title="Runtime Percentile: 65.15%">541. Reverse String II</span>
     - <span title="Runtime Percentile: 93.82%">151. Reverse Words in a String</span>

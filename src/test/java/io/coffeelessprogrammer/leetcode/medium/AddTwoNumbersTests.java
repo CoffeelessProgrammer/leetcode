@@ -1,7 +1,8 @@
 package io.coffeelessprogrammer.leetcode.medium;
 
-import io.coffeelessprogrammer.leetcode.ds.ListNode;
+import io.coffeelessprogrammer.leetcode.datastructures.ListNode;
 
+import io.coffeelessprogrammer.leetcode.difficulty.medium.AddTwoNumbers;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

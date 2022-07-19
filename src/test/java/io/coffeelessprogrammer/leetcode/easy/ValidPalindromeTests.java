@@ -1,5 +1,7 @@
 package io.coffeelessprogrammer.leetcode.easy;
 
+import io.coffeelessprogrammer.leetcode.difficulty.easy.ValidPalindrome;
+import io.coffeelessprogrammer.leetcode.difficulty.easy.ValidPalindromeII;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 

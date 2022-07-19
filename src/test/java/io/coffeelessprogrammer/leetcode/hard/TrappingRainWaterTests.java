@@ -3,7 +3,7 @@ package io.coffeelessprogrammer.leetcode.hard;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import io.coffeelessprogrammer.leetcode.twopointers.TrappingRainWater;
+import io.coffeelessprogrammer.leetcode.topics.twopointers.slidingwindow.TrappingRainWater;
 
 public class TrappingRainWaterTests {
 

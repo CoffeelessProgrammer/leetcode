@@ -1,5 +1,6 @@
 package io.coffeelessprogrammer.leetcode.easy;
 
+import io.coffeelessprogrammer.leetcode.difficulty.easy.TwoSum;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

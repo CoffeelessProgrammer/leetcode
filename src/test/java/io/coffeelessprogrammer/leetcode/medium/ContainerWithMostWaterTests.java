@@ -3,7 +3,7 @@ package io.coffeelessprogrammer.leetcode.medium;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import io.coffeelessprogrammer.leetcode.twopointers.ContainerWithMostWater;
+import io.coffeelessprogrammer.leetcode.topics.twopointers.slidingwindow.ContainerWithMostWater;
 
 public class ContainerWithMostWaterTests {
 

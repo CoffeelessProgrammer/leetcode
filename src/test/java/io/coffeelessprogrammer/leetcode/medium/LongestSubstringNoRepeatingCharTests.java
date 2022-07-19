@@ -1,5 +1,6 @@
 package io.coffeelessprogrammer.leetcode.medium;
 
+import io.coffeelessprogrammer.leetcode.topics.twopointers.slidingwindow.LongestSubstringNoRepeatingChar;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.Assertions;
 
